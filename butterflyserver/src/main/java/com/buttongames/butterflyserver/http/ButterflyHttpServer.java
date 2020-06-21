@@ -216,7 +216,7 @@ public class ButterflyHttpServer {
             machine = new Machine(newUser, requestBodyPcbId, LocalDateTime.now(), true, 0);
             machineDao.create(machine);
 
-            throw new InvalidPcbIdException();
+            // throw new InvalidPcbIdException(); comment out, mirror version 1.0
         } else if (!machine.isEnabled()) {
             throw new InvalidPcbIdException();
         }
