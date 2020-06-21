@@ -6,38 +6,38 @@
 
 -- Rename the eventsSaveData field
 
-ALTER TABLE `ddr_16_event_save_data` RENAME TO `ddr_16_event_save_data_orig`;
+ALTER TABLE "ddr_16_event_save_data" RENAME TO "ddr_16_event_save_data_orig";
 
-CREATE TABLE `ddr_16_event_save_data` (
-  `id`	bigint NOT NULL,
-  `comp_time`	bigint,
-  `event_condition`	bigint,
-  `event_id`	integer,
-  `event_no`	integer,
-  `event_type`	integer,
-  `reward`	integer,
-  `save_data`	bigint,
-  `user_id`	bigint,
-  PRIMARY KEY(`id`)
+CREATE TABLE "ddr_16_event_save_data" (
+  "id"	bigint NOT NULL,
+  "comp_time"	bigint,
+  "event_condition"	bigint,
+  "event_id"	integer,
+  "event_no"	integer,
+  "event_type"	integer,
+  "reward"	integer,
+  "save_data"	bigint,
+  "user_id"	bigint,
+  PRIMARY KEY("id")
 );
 
-INSERT INTO ddr_16_event_save_data(id, comp_time, event_condition, event_id, event_no, event_type, reward, save_data, user_id) SELECT id, comp_time, condition, event_id, event_no, event_type, reward, save_data, user_id FROM ddr_16_event_save_data_orig;
+INSERT INTO "ddr_16_event_save_data"(id, comp_time, event_condition, event_id, event_no, event_type, reward, save_data, user_id) SELECT id, comp_time, condition, event_id, event_no, event_type, reward, save_data, user_id FROM "ddr_16_event_save_data_orig";
 
-DROP TABLE ddr_16_event_save_data_orig;
+DROP TABLE "ddr_16_event_save_data_orig";
 
 -- Rename the globalEvents field
 
-ALTER TABLE `ddr_16_global_events` RENAME TO `ddr_16_global_events_orig`;
+ALTER TABLE "ddr_16_global_events" RENAME TO "ddr_16_global_events_orig";
 
-CREATE TABLE `ddr_16_global_events` (
-  `event_id`	integer NOT NULL,
-  `event_condition`	bigint,
-  `event_no`	integer,
-  `event_type`	integer,
-  `reward`	integer,
-  PRIMARY KEY(`event_id`)
+CREATE TABLE "ddr_16_global_events" (
+  "event_id"	integer NOT NULL,
+  "event_condition"	bigint,
+  "event_no"	integer,
+  "event_type"	integer,
+  "reward"	integer,
+  PRIMARY KEY("event_id")
 );
 
-INSERT INTO ddr_16_global_events(event_id, event_condition, event_no, event_type, reward) SELECT event_id, condition, event_no, event_type, reward FROM ddr_16_global_events_orig;
+INSERT INTO "ddr_16_global_events"(event_id, event_condition, event_no, event_type, reward) SELECT event_id, condition, event_no, event_type, reward FROM "ddr_16_global_events_orig";
 
-DROP TABLE ddr_16_global_events_orig;
+DROP TABLE "ddr_16_global_events_orig";
