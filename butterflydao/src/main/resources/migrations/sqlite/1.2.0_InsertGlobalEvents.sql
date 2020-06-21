@@ -1,5 +1,16 @@
 -- This script inserts the global events data into the DB, now that
 -- events.xml is no longer a hardcoded file
+-- added appropriate command to create the table and properly add the values into the database
+
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "ddr_16_global_events" (
+	"event_id"	integer NOT NULL,
+	"event_condition"	bigint,
+	"event_no"	integer,
+	"event_type"	integer,
+	"reward"	integer,
+	PRIMARY KEY("event_id")
+);
 
 INSERT INTO ddr_16_global_events VALUES(1, 0, 0, 9999, 0);
 INSERT INTO ddr_16_global_events VALUES(2, 0, 0, 9999, 0);
@@ -51,3 +62,4 @@ INSERT INTO ddr_16_global_events VALUES(47, 0, 0, 9999, 0);
 INSERT INTO ddr_16_global_events VALUES(48, 0, 0, 9999, 0);
 INSERT INTO ddr_16_global_events VALUES(49, 0, 0, 9999, 0);
 INSERT INTO ddr_16_global_events VALUES(50, 0, 0, 9999, 0);
+COMMIT;
