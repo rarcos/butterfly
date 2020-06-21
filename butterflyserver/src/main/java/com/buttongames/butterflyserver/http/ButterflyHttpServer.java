@@ -212,7 +212,7 @@ public class ButterflyHttpServer {
             final LocalDateTime now = LocalDateTime.now();
             final ButterflyUser newUser = new ButterflyUser("0000", now, now, 10000);
             userDao.create(newUser);
-
+            //previous release value is "true;" value of "false" causes "Network Error" and forces game into "Maintenance Mode"
             machine = new Machine(newUser, requestBodyPcbId, LocalDateTime.now(), false, 0);
             machineDao.create(machine);
 
