@@ -208,15 +208,15 @@ public class ButterflyHttpServer {
         Machine machine = this.machineDao.findByPcbId(requestBodyPcbId);
 
         if (machine == null) {
-            // create a machine for auditing purposes, and ban them
+            // create a machine for auditing purposes, and ban them //revert code like the previous official release (1.1.0) to allow new machine by default
             final LocalDateTime now = LocalDateTime.now();
             final ButterflyUser newUser = new ButterflyUser("0000", now, now, 10000);
             userDao.create(newUser);
 
-            machine = new Machine(newUser, requestBodyPcbId, LocalDateTime.now(), false, 0);
+            machine = new Machine(newUser, requestBodyPcbId, LocalDateTime.now(), true, 0);
             machineDao.create(machine);
-
-            throw new InvalidPcbIdException();
+            // comment out line of code below
+            // throw new InvalidPcbIdException();
         } else if (!machine.isEnabled()) {
             throw new InvalidPcbIdException();
         }
