@@ -14,13 +14,13 @@ This is **butterfly**, an e-AMUSEMENT server targeting Dance Dance Revolution A.
 ### How do I use it?
 
 Requirements:
-* Java 8 or above needs to be installed. Most users should already have this, but if not, download the latest JRE for your platform
+* Java 14 (latest as of this writing) needs to be installed. Most users should already have this, but if not, download the latest JDK for your platform
 
 #### Usage:
 
 Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The path, including `YOUR_USERNAME`, can be anything, as this is where the database file will be saved. Save and run the file:
 
-`java -Ddb_path="C:\Users\YOUR_USERNAME\Desktop\db.sqlite" -jar butterfly-1.1.0.jar`
+`java -jar butterfly-1.1.1-20200701.jar`
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
