@@ -18,9 +18,9 @@ Requirements:
 
 #### Usage:
 
-Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The path, including `YOUR_USERNAME`, can be anything, as this is where the database file will be saved. Save and run the file:
+Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
 
-`java -Ddb_path="C:\Users\YOUR_USERNAME\Desktop\db.sqlite" -jar butterfly-1.1.0.jar`
+`java -jar butterfly-1.2.0.jar`
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
