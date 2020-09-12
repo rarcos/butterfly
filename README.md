@@ -1,9 +1,9 @@
 # butterfly
-An e-AMUSEMENT server emulator, targeting Dance Dance Revolution A.
+An e-AMUSEMENT server emulator.
 
 ## What is this?
 
-This is **butterfly**, an e-AMUSEMENT server targeting Dance Dance Revolution A. This is a mostly-fully-featured server, intended for local usage.
+This is **butterfly**, an e-AMUSEMENT server emulator. This is a mostly-fully-featured server, intended for local usage.
 
 ### Features:
 * Full support for profile creation, score saving, options saving, rivals, etc.
@@ -20,13 +20,13 @@ Requirements:
 
 Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
 
-`java -jar butterfly-1.2.0.jar`
+`java -jar butterfly-1.3.0.jar`
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
 ### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
 
-Unfortunately, I did not get around to making a web UI for this server. I might in the future. In the meantime, you'll need to manually edit the database to change these options... any SQLite database browser will work.
+There is some base code within butterfly for creating a web-based UI, so there is ground work that can be continued. In the meantime, you'll need to manually edit the database to change these options...any SQLite database browser will work.
 
 To change your options, find your user under the `ddr_16_profiles` table and edit whichever columns you'd like. Below are the valid options for each column you probably care about:
 
@@ -97,10 +97,8 @@ If you'd like to set your **rivals**, you can edit the `rival_1_id`, `rival_2_id
 
 ### What's next?
 
-Probably nothing. I'm mainly releasing this because I don't see myself working more on it in the future, but I thought it'd be helpful for others. I mainly coded it as a learning exercise, and I suspect that the "juicy" bits of this code won't be relevant for much longer anyway. Maybe I'll make a web UI in the future but don't hold me to that.
+It depends! As long as there's new code from the official source that brings new or additional functionality I plan to continue this. My initial intention was just to get this up and running so I can play the game, but eventually I found it to be enjoyable and it's also good/additional learning on my part. Plus I get to meet new people along the way, and no less than the original author of butterfly himself!
 
 ### Credits
-* **skogaby**: main author
-* **dogelition_man** (https://github.com/ledoge): author of Kotlin kbinxml and card number conversion code
+* **skogaby**: original author of butterfly
 * Various other devs for tips/pointers
-* Various other projects that I reversed for figuring out packet encryption/compression
