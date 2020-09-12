@@ -34,6 +34,16 @@ At this point, the server should be running. Connect your game and play! Set the
 
 4. Once imported, start your game again. To play the Golden League you should be playing on "Gold Cab Mode."
 
+### How to configure the Golden League?
+
+1. Notice that the start_time, end_time, and summary_time are in a format that's just purely numbers. That's the date/time in UNIX format. There are online "decoders" that can convert date/time into UNIX format.
+
+2. Set the "start" and "end" date/time of each "League Period" and save the SQL script file.
+
+3. Import the resulting SQL script file again as per previous instructions (above).
+
+4. Full mechanics of the Golden League can be reviewed here: https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29
+
 
 ### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
 
