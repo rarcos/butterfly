@@ -11,12 +11,12 @@ This is **butterfly**, an e-AMUSEMENT server emulator. This is a mostly-fully-fe
 * Forced full unlock (currently event progress is not tracked / everything is fully unlocked already)
 * Can run on Windows/Mac/Linux
 
-### How do I use it?
+#### How do I use it?
 
 Requirements:
 * Java 8 or above needs to be installed. Most users should already have this, but if not, download the latest JRE for your platform
 
-#### Usage:
+### Usage:
 
 Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
 
@@ -24,7 +24,7 @@ Put the following in a file called `run_server.bat` if on Windows, or `run_serve
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
-#### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
+### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
 
 1. In the "Releases" section of this GitHub you will find butterfly, two (2) SQL script files, a command-line version of SQLite (sqlite3.exe), and an sql.bat file. Download all of them.
 
