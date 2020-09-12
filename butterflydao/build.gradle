@@ -31,7 +31,6 @@ dependencies {
     // update 09.12.2020
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
 
-
     // Models
     implementation project(':butterflymodel')
 }

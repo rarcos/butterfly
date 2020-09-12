@@ -32,6 +32,12 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-context', version: '5.2.8.RELEASE'
     // update 09.12.2020
     testCompile group: 'org.springframework', name: 'spring-test', version: '5.2.8.RELEASE'
+
+    // GraphQL API support
+    compile group: 'com.graphql-java', name: 'graphql-java', version: '13.0'
+    //update 09.12.2020
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.12'
+    compile group: 'io.leangen.graphql', name: 'graphql-spqr-spring-boot-starter', version: '0.0.4'
 }
 
 jar {
