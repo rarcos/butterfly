@@ -24,6 +24,17 @@ Put the following in a file called `run_server.bat` if on Windows, or `run_serve
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
+#### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
+
+1. In the "Releases" section of this GitHub you will find butterfly, two (2) SQL script files, a command-line version of SQLite (sqlite3.exe), and an sql.bat file. Download all of them.
+
+2. Run butterfly at least once, because it will generate a database. This will hold all information related to the game (your scores, progress, etc.).
+
+3. After your first run (you should be exited from the game), you can now import the SQL script files. You can either open the database using an SQL Database browser and import the SQL files, or use the provided command-line tool as well as the provided .bat file (just double-click to run).
+
+4. Once imported, start your game again. To play the Golden League you should be playing on "Gold Cab Mode."
+
+
 ### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
 
 There is some base code within butterfly for creating a web-based UI, so there is ground work that can be continued. In the meantime, you'll need to manually edit the database to change these options...any SQLite database browser will work.
