@@ -11,12 +11,15 @@ This is **butterfly**, an e-AMUSEMENT server emulator. This is a mostly-fully-fe
 * Forced full unlock (currently event progress is not tracked / everything is fully unlocked already)
 * Can run on Windows/Mac/Linux
 
-#### How do I use it?
+## How do I use it?
 
-Requirements:
-* Java 8 or above needs to be installed. Most users should already have this, but if not, download the latest JRE for your platform
+### Requirements:
+* This forked build can run on Java 8 or above. Most users should already have this, but if not, download the latest JRE for your platform
+* **IMPORTANT:** the official butterfly is made with Java 11 so make sure that you have the appropriate Java version installed
 
-### Usage:
+### Running butterfly:
+
+_**Via Command Line**_
 
 Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
 
@@ -24,7 +27,9 @@ Put the following in a file called `run_server.bat` if on Windows, or `run_serve
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
 
-**Bonus:** Windows-executable (.exe) for Windows users added. It's the same thing but just clickable right off the bat. Check out the "Releases" section for the newly-uploaded file!
+_**Via Executable (MS Windows)**_
+
+Windows-executable (.exe) for Windows users added in the "Releases" section. It's the same thing but just clickable (double-click to run) which is familiar to most Windows users.
 
 ### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
 
@@ -36,7 +41,7 @@ At this point, the server should be running. Connect your game and play! Set the
 
 4. Once imported, start your game again. To play the Golden League you should be playing on "Gold Cab Mode."
 
-### How to configure the Golden League?
+### How to configure the Golden League:
 
 1. Notice that the start_time, end_time, and summary_time are in a format that's just purely numbers. That's the date/time in UNIX format. There are online "decoders" that can convert date/time into UNIX format.
 
@@ -44,8 +49,11 @@ At this point, the server should be running. Connect your game and play! Set the
 
 3. Import the resulting SQL script file again as per previous instructions (above).
 
-4. Full mechanics of the Golden League can be reviewed here: https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29
+4. Alternatively, import the provided SQL script files "as-is" and then edit it via an SQL Browser (more convenient because the information is already organized in a database table).
 
+5. Full mechanics of the Golden League can be reviewed here; use this as your reference when creating your own Golden League: https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29
+
+6. **IMPORTANT:** if you read the mechanics, notice that the "Final League Period" has no "demotions" on a player's Class/Rank. Make sure you factor this in when creating your own Golden League Event.
 
 ### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
 
