@@ -43,10 +43,12 @@ Windows-executable (.exe) for Windows users added in the "Releases" section. It'
 1. Notice that the start_time, end_time, and summary_time are in a format that's just purely numbers. That's the date/time in UNIX format. There are online "decoders" that can convert date/time into UNIX format. [Here's](https://dencode.com/) a decoder that I personally use.
 1. Set the "start" and "end" date/time of each "League Period" and save the SQL script file.
 1. Import the resulting SQL script file again as per previous instructions (above).
-1. Alternatively, import the provided SQL script files "as-is" first, and then edit it via an SQL Browser (more convenient because the information is already organized in a database table).
-1. Full mechanics of the Golden League can be reviewed [here.](https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29) Use this as your reference when creating your own Golden League.
 
-**IMPORTANT:** as per the Golden League mechanics, players cannot be "demoted" from their Ranks during the "Final League Period" of the Golden League. Make sure you factor this in when creating your own Golden League Event.
+_**Golden League Feature Notes**_
+
+* **Alternative process:** import the provided SQL script files "as-is" first, and then edit it via an SQL Browser. This is more convenient (and easier for the typical end-user) because the information is already organized in a database table.
+* **Golden League Mechanics:** full mechanics of the Golden League can be reviewed [here.](https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29) Use this as your reference when creating your own Golden League.
+* **IMPORTANT:** as per the Golden League mechanics, players cannot be "demoted" from their Ranks during the "Final League Period" of the Golden League. Make sure you factor this in when creating your own Golden League Event.
 
 ### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
 
