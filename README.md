@@ -20,9 +20,11 @@ Requirements:
 
 Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
 
-`java -jar butterfly-1.3.0.jar`
+`java -jar butterflyserver-1.3.0-all.jar`
 
 At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
+
+**Bonus:** Windows-executable (.exe) for Windows users added. It's the same thing but just clickable right off the bat. Check out the "Releases" section for the newly-uploaded file!
 
 ### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
 
