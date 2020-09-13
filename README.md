@@ -33,23 +33,23 @@ Windows-executable (.exe) for Windows users added in the "Releases" section. It'
 
 ### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
 
-1. In the "Releases" section of this GitHub you will find butterfly, two (2) SQL script files, a command-line version of SQLite (sqlite3.exe), and an sql.bat file. Download all of them.
+1. In the "Releases" section of this GitHub you will find butterfly (both in .jar and .exe version), two (2) SQL script files, a command-line version of SQLite (sqlite3.exe), and an sql.bat file. Download all of them.
 
 2. Run butterfly at least once, because it will generate a database. This will hold all information related to the game (your scores, progress, etc.).
 
-3. After your first run (you should be exited from the game), you can now import the SQL script files. You can either open the database using an SQL Database browser and import the SQL files, or use the provided command-line tool as well as the provided .bat file (just double-click to run).
+3. After your first run (you should be exited from the game by now), you can now import the SQL script files. Make sure that the SQL script files are in the same folder as your butterfly database (`butterfly.sqlite`). You can either open the database using an SQL Database browser and import the SQL files, or use the provided command-line tool and .bat file to import (just double-click the .bat file to run).
 
 4. Once imported, start your game again. To play the Golden League you should be playing on "Gold Cab Mode."
 
 ### How to configure the Golden League:
 
-1. Notice that the start_time, end_time, and summary_time are in a format that's just purely numbers. That's the date/time in UNIX format. There are online "decoders" that can convert date/time into UNIX format.
+1. Notice that the start_time, end_time, and summary_time are in a format that's just purely numbers. That's the date/time in UNIX format. There are online "decoders" that can convert date/time into UNIX format. Here's a decoder that I personally use: https://dencode.com/
 
 2. Set the "start" and "end" date/time of each "League Period" and save the SQL script file.
 
 3. Import the resulting SQL script file again as per previous instructions (above).
 
-4. Alternatively, import the provided SQL script files "as-is" and then edit it via an SQL Browser (more convenient because the information is already organized in a database table).
+4. Alternatively, import the provided SQL script files "as-is" first, and then edit it via an SQL Browser (more convenient because the information is already organized in a database table).
 
 5. Full mechanics of the Golden League can be reviewed here; use this as your reference when creating your own Golden League: https://www.remywiki.com/AC_DDR_A20#GOLDEN_LEAGUE_.28.E3.82.B4.E3.83.BC.E3.83.AB.E3.83.87.E3.83.B3.E3.83.AA.E3.83.BC.E3.82.B0.29
 
