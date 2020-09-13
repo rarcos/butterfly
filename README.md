@@ -15,7 +15,7 @@ This is **butterfly**, an e-AMUSEMENT server emulator. This is a mostly-fully-fe
 
 ### Requirements:
 * This forked build can run on Java 8 as the minimum version. Most users should already have this, but if not, download the latest JRE for your platform.
-* **IMPORTANT:** the official butterfly is made with Java 11 so make sure that you have the appropriate Java version installed.
+* **IMPORTANT:** the official butterfly is made with Java 11 so make sure that you have the appropriate Java version installed if you are going to use the official version of butterfly.
 
 ### Running butterfly:
 
