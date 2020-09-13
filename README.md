@@ -125,6 +125,16 @@ If you'd like to set your **rivals**, you can edit the `rival_1_id`, `rival_2_id
 
 It depends! As long as there's new code from the official source that brings new or additional functionality I plan to continue this. My initial intention was just to get this up and running so I can play the game, but eventually I found it to be enjoyable and it's also good/additional learning on my part. Plus I get to meet new people along the way, and no less than the original author of butterfly himself!
 
+### Contributing
+
+I am but only one of the many who have forked the official source code of butterfly. For all we know, there could even be other "unofficial" builds like mins but just unpublished.
+
+If you want to contribute to the development of butterfly, I recommend contributing to the official source code: https://github.com/skogaby/butterfly This will help make butterfly a better tool for everyone!
+
 ### Credits
 * **skogaby**: original author of butterfly
 * Various other devs for tips/pointers
+
+### License
+
+Please visit [this link](https://github.com/topet2k12001/butterfly/blob/master/LICENSE) to see the license used for butterfly.
