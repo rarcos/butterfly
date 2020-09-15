@@ -47,7 +47,7 @@ INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_t
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (33, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (34, 0, 0, 9999, 0); --"Konami 50th Anniversary" logo (still applicable to 2020 data)
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (35, 0, 0, 9999, 0);
-INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (36, 0, 0, 9999, 0);
+INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (36, 0, 0, 9999, 0); --Dan Course on/off (Dan Course is exclusive to Gold Cab Mode)
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (37, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (38, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (39, 0, 0, 9999, 0);
@@ -58,7 +58,7 @@ INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_t
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (44, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (45, 0, 0, 9999, 0); --Ichika Bemani 2019 Event song unlock pop-up notifications during the Card Swipe screen (for data older than 20200203)
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (46, 0, 0, 9999, 0);
-INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (47, 0, 0, 9999, 0); --20th Anniversary Grand Finale curtain animation during Song Result screen (for data older than 20200203)
+INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (47, 0, 0, 9999, 0); --20th Anniversary Grand Finale curtain animation during Song Result screen (still applicable to 2020 data)
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (48, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (49, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (50, 0, 0, 9999, 0);
