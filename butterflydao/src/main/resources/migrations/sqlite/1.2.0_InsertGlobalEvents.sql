@@ -47,7 +47,7 @@ INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_t
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (33, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (34, 0, 0, 10, 0); -- "Konami 50th Anniversary" logo (still applicable to 2020 data)
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (35, 0, 0, 9999, 0);
-INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (36, 0, 0, 9999, 0); -- Dan Course on/off (Dan Course is exclusive to Gold Cab Mode)
+INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (36, 0, 0, 9999, 0); -- Nonstop Course Mode on/off
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (37, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (38, 0, 0, 9999, 0);
 INSERT INTO "ddr_16_global_events" (event_id, event_condition, event_no, event_type, reward) VALUES (39, 0, 0, 9999, 0);
