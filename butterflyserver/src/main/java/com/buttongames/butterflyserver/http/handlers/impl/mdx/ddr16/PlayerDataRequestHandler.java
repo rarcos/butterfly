@@ -662,8 +662,10 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
                             .s32("playstyle", 0).up(3);
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////
-                // enable the song rewards for the following events: "Ichika no BEMANI touhyou senbatsusen 2019," Summer Dance Camp, 20th Anniversary Grand Finale, DDR Challenge Carnival, and Floor Infection
-                int[] mcodes = {38264, 38289, 38279, 38291, 38292, 38294, 38290, 38293, 38295, 38287, 38211, 38286, 38222, 38215, 38217, 38216, 38218, 38314, 38313, 38312, 38207, 38255, 38256, 38299, 38265, 38211, 38205};
+                // enable the song rewards for the following events: "Ichika no BEMANI touhyou senbatsusen 2019,"
+                // Summer Dance Camp, 20th Anniversary Grand Finale, DDR Challenge Carnival, Floor Infection, and
+                // the 9th KAC songs Ranker Killer Girl and History of the Future (required for 20190903 data)
+                int[] mcodes = {38264, 38289, 38279, 38291, 38292, 38294, 38290, 38293, 38295, 38287, 38211, 38286, 38222, 38215, 38217, 38216, 38218, 38315, 38305, 38207, 38255, 38256, 38299, 38265, 38205, 38314, 38313, 38312};
                 int eventId = 1010;
 
                 for (int mcode : mcodes) {
@@ -673,7 +675,7 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
                             .u32("eventno", 0).up()
                             .s64("condition", 10000).up()
                             .u32("reward", mcode).up()
-                            .s32("comptime", 1).up()
+                            .s32("comptime", 2).up()
                             .s64("savedata", 0).up().up();
                 }
 
@@ -683,6 +685,7 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
 
                 if (userEvents.isEmpty()) {
                     // if the user has no event progress, create their base event progress
+
                     for (EventSaveData event : this.baseUserEvents) {
                         EventSaveData newEvent = new EventSaveData(event);
                         newEvent.setUser(user);
