@@ -1,4 +1,5 @@
-# butterfly
+# butterfly (1.3.0 UNOFFICIAL)
+
 An e-AMUSEMENT server emulator.
 
 ## What is this?
@@ -6,110 +7,40 @@ An e-AMUSEMENT server emulator.
 This is **butterfly**, an e-AMUSEMENT server emulator. This is a mostly-fully-featured server, intended for local usage.
 
 ### Features:
+
 * Full support for profile creation, score saving, options saving, rivals, etc.
   * Carding in works as expected, and any number of profiles is supported
 * Forced full unlock (currently event progress is not tracked / everything is fully unlocked already)
 * Can run on Windows/Mac/Linux
 
-### How do I use it?
+## Installation
 
-Requirements:
-* Java 8 or above needs to be installed. Most users should already have this, but if not, download the latest JRE for your platform
+There is no need to install butterfly. Users just need to run it, "set-and-forget" style. It runs in a terminal/command-line window and will keep doing so until the user exits it manually.
 
-#### Usage:
+## Usage
 
-Put the following in a file called `run_server.bat` if on Windows, or `run_server.sh` if on Linux/Mac. The database file will be saved in the same path where Butterfly is launched. Save and run the file:
+Please visit the [wiki](https://github.com/topet2k12001/butterfly/wiki) to know the detailed usage of butterfly.
 
-`java -jar butterfly-1.3.0.jar`
+## Contributing
 
-At this point, the server should be running. Connect your game and play! Set the `services` URL to `http://localhost` and turn off `url_slash`.
+I am but only one of the many who have forked the official source code of butterfly. For all we know, there could even be other "unofficial" builds like mine but just unpublished. I've had the chance to engage in a conversation with the original author and he is also an advocate of Open Source!
 
-#### How to import the SQL Script Files (this will enable Global Events as well as Golden League):
+So if you want to contribute to the development of butterfly, I recommend contributing to the official source code: https://github.com/skogaby/butterfly. This will help make butterfly a better tool for everyone!
 
-1. In the "Releases" section of this GitHub you will find butterfly, two (2) SQL script files, a command-line version of SQLite (sqlite3.exe), and an sql.bat file. Download all of them.
-
-2. Run butterfly at least once, because it will generate a database. This will hold all information related to the game (your scores, progress, etc.).
-
-3. After your first run (you should be exited from the game), you can now import the SQL script files. You can either open the database using an SQL Database browser and import the SQL files, or use the provided command-line tool as well as the provided .bat file (just double-click to run).
-
-4. Once imported, start your game again. To play the Golden League you should be playing on "Gold Cab Mode."
-
-
-### How do I change webUI-only options (dancer, rivals, fast/slow judgement, etc.)?
-
-There is some base code within butterfly for creating a web-based UI, so there is ground work that can be continued. In the meantime, you'll need to manually edit the database to change these options...any SQLite database browser will work.
-
-To change your options, find your user under the `ddr_16_profiles` table and edit whichever columns you'd like. Below are the valid options for each column you probably care about:
-
-**dancer_character**:
-```
-    RANDOM,
-    RANDOM_MALE,
-    RANDOM_FEMALE,
-    YUNI,
-    RAGE,
-    AFRO,
-    JENNY,
-    EMI,
-    BABYLON,
-    GUS,
-    RUBY,
-    ALICE,
-    JULIO,
-    BONNIE,
-    ZERO,
-    RINON,
-    RYUSEI_EMI,
-    RYUSEI_ALICE,
-    RYUSEI_RINON
-```
-
-**option_arrow_skin**:
-```
-    NORMAL,
-    X,
-    CLASSIC,
-    CYBER,
-    MEDIUM,
-    SMALL,
-    DOT,
-    BUTTERFLY
-```
-
-**option_screen_filter**:
-```
-    OFF,
-    LIGHT,
-    MEDIUM,
-    DARK
-```
-
-**option_guidelines**:
-```    OFF,
-    ARROW_TOP,
-    ARROW_CENTER
-```
-
-**option_judgement_layer**:
-```
-    FOREGROUND,
-    BACKGROUND
-```
-
-**show_fast_slow_results**:
-```
-    0,
-    1
-```
-
-If you'd like to set your weight, enter your weight in **kilograms** in the weight column.
-
-If you'd like to set your **rivals**, you can edit the `rival_1_id`, `rival_2_id`, or `rival_3_id` columns to contain the **ID** of the rival user, meaning the value from the `id` column of the user.
-
-### What's next?
+## What's next?
 
 It depends! As long as there's new code from the official source that brings new or additional functionality I plan to continue this. My initial intention was just to get this up and running so I can play the game, but eventually I found it to be enjoyable and it's also good/additional learning on my part. Plus I get to meet new people along the way, and no less than the original author of butterfly himself!
 
-### Credits
+## Credits
+
 * **skogaby**: original author of butterfly
 * Various other devs for tips/pointers
+
+## License
+
+The original butterfly uses the Apache License 2.0 so I'm using the same. Please visit [this link](https://github.com/topet2k12001/butterfly/blob/master/LICENSE) to see the license in full.
+
+Also, this version of butterfly is a fork of the [original butterfly](https://github.com/skogaby/butterfly) so moving forward I'm appending my unofficial builds with (**x.x.x UNOFFICIAL**) for 2 main reasons:
+
+* So that it's clear to users which build of butterfly they are using
+* To avoid inconvenience to the original author as people may flock to him asking for support when they may actually be using unofficial builds
