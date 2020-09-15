@@ -1,4 +1,4 @@
-# butterfly (1.3.0 UNOFFICIAL)
+# butterfly (1.3.1 UNOFFICIAL)
 
 An e-AMUSEMENT server emulator.
 
