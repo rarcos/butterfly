@@ -172,9 +172,9 @@ Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
 * skogaby, the original author of butterfly
 * tw3nz0r, for events #34 and #45
-* T27|FOMZIE, for sharing your methodology/approach to ultimately make available the Dancoing Characters
+* T27|FOMZIE, for sharing his methodology/approach to ultimately make available the Dancoing Characters, among others
 * sirk, for teaching me SQL and helping out with the automated scripts
-* bman, for your hard work in figuring out most of the events
+* bman, for his hard work in figuring out most of the events
 
 You've inspired me and pushed me to, and beyond, my limitations. I never knew I could achieve such things. Thank you.
 
