@@ -636,7 +636,7 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
                             .s32("playstyle", 0).up(3);
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////
-                // Round 1 "2st Stage" Event
+                // Round 1 "2nd Stage" Event // fix typo on comment - topet2k12001 02.22.2021
                 respBuilder = respBuilder.e("championship")
                         .s32("championship_id", 2).up()
                         .str("name_base64", "c2tvZydlbXM=").up()
@@ -662,23 +662,8 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
                             .s32("playstyle", 0).up(3);
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////
-                // enable the song rewards for the following events: "Ichika no BEMANI touhyou senbatsusen 2019,"
-                // Summer Dance Camp, 20th Anniversary Grand Finale, DDR Challenge Carnival, Floor Infection, and
-                // the 9th KAC songs Ranker Killer Girl and History of the Future (required for 20190903 data)
-                int[] mcodes = {38264, 38289, 38279, 38291, 38292, 38294, 38290, 38293, 38295, 38287, 38211, 38286, 38222, 38215, 38217, 38216, 38218, 38315, 38305, 38207, 38255, 38256, 38299, 38265, 38205, 38314, 38313, 38312};
-                int eventId = 1010;
-
-                for (int mcode : mcodes) {
-                    respBuilder = respBuilder.e("eventdata")
-                            .u32("eventid", eventId++).up()
-                            .s32("eventtype", 10).up()
-                            .u32("eventno", 0).up()
-                            .s64("condition", 10000).up()
-                            .u32("reward", mcode).up()
-                            .s32("comptime", 2).up()
-                            .s64("savedata", 0).up().up();
-                }
-
+                // Remove "hard-coded" forced-unlock and implement forced-unlocking in the database instead - topet2k12001 02.22.2021
+                
                 /////////////////////////////////////////////////////////////////////////////////////////////////
                 // set the user's user-level event progress
                 final List<EventSaveData> userEvents = this.eventSaveDataDao.findByUser(user);
@@ -1323,7 +1308,7 @@ public class PlayerDataRequestHandler extends BaseRequestHandler {
                 eventSaveData.setSaveData(saveData);
                 this.eventSaveDataDao.update(eventSaveData);
             } else {
-                eventSaveData = new EventSaveData(user, eventId, eventType, eventNo, compTime, saveData, 0, 0);
+                eventSaveData = new EventSaveData(user, eventId, eventType, eventNo, compTime, saveData, 0, 0); 
                 this.eventSaveDataDao.create(eventSaveData);
             }
         }

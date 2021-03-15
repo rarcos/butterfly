@@ -23,5 +23,16 @@ public enum DancerOption {
     RINON,
     RYUSEI_EMI,
     RYUSEI_ALICE,
-    RYUSEI_RINON
+    RYUSEI_RINON,
+    //add extra characters - credits: T27|FOMZIE for the methodology
+    KAC_YUNI,
+    DARK_RINON,
+    VICTORY_CONCENT,
+    GEISHA_ZUKIN,
+    PIX_GREEN,
+    ACE_EMI,
+    X2_YUNI,
+    X2_RAGE,
+    X2_AFRO,
+    X2_JENNY
 }
