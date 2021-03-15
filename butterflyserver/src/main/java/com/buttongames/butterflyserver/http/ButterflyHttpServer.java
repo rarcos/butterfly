@@ -143,7 +143,7 @@ public class ButterflyHttpServer {
             final SupportedGames gameModel = SupportedGames.fromModel(request.attribute("model"));
 
             switch (gameModel) {
-                case DDR_A_A20:
+                case DDR_2014_A_A20: //add DDR 2014 - topet2k12001 02.22.2021
                     return this.baseDdr16RequestHandler.handleRequest(requestBody, request, response);
                 default:
                     throw new InvalidRequestModelException();
