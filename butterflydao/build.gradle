@@ -1,5 +1,5 @@
 group 'com.buttongames'
-version '1.3.1'
+version '1.4.0'
 
 apply plugin: 'java'
 sourceCompatibility = 1.8
@@ -8,28 +8,31 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.13'
+    // update - topet2k12001 02.18.2021
+    testCompile group: 'junit', name: 'junit', version: '4.13.2'
 
     // Log4j, logging
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.3'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.0'
+    // no update - topet2k12001
     compile group: 'org.slf4j', name: 'slf4j-simple', version:'1.7.30'
 
-    // update 09.12.2020
-    compile group: 'org.springframework', name: 'spring-context', version: '5.2.8.RELEASE'
-    // update 09.12.2020
-    testCompile group: 'org.springframework', name: 'spring-test', version: '5.2.8.RELEASE'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.springframework', name: 'spring-context', version: '5.2.13.RELEASE'
+    // update - topet2k12001 02.18.2021
+    testCompile group: 'org.springframework', name: 'spring-test', version: '5.2.13.RELEASE'
 
     // Hibernate, SQL support
-    // update 09.12.2020
-    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.21.Final'
-    // update 09.12.2020
-    compile group: 'org.hibernate', name: 'hibernate-java8', version: '5.4.21.Final'
-    // update 09.12.2020
-    compile group: 'org.springframework', name: 'spring-orm', version: '5.2.8.RELEASE'
-    // update 09.12.2020
-    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.32.3.2'
-    // update 09.12.2020
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.28.Final'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.hibernate', name: 'hibernate-java8', version: '5.4.28.Final'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.springframework', name: 'spring-orm', version: '5.2.13.RELEASE'
+    // update - topet2k12001 02.18.2021
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.34.0'
+    // update - topet2k12001 02.18.2021
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
 
     // Models
     implementation project(':butterflymodel')
